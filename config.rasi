@@ -1,0 +1,13 @@
+configuration {
+	modi: "drun,window,ssh,combi";
+	theme: "/home/wolfgang/.cache/wal/colors-rofi-dark.rasi";
+	font: "IosevkaNerdFont 20";
+	combi-modi: "window,drun,ssh";
+	width: 20;
+	lines: 6;
+	bw: 20;	
+	padding: 20;
+	eh: 1;	
+	window-thumbnail: "True";
+	separator-style: "solid";
+}
