@@ -1,0 +1,134 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+include-file = ~/.config/polybar/colors
+include-file = ~/.config/polybar/modules
+
+[bar/main]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 18%
+height = 40
+offset-x = 0%
+radius = 20
+fixed-center = true
+border-size = 8
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+padding-left = 3
+padding-right = 3
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = IosevkaTermMedium:size=10
+font-1 = siji:pixelsize=14;1
+font-2 = FontAwesome:style=Bold:size=10
+
+modules-left = filesystem xkeyboard memory cpu eth temperature
+
+[bar/center]
+
+;monitor = ${env:MONITOR:HDMI-1}
+width = 20%
+height = 40
+offset-x = 40%
+offset-y =
+fixed-center = true
+border-size=8
+
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+;padding-left = 3
+;padding-right = 3
+
+;module-margin-center = 10
+
+font-0 = IosevkaTermMedium:size=10
+font-1 = siji:pixelsize=14;1
+font-2 = FontAwesome:style=Bold:size=10
+
+modules-center = bspwm 
+
+scroll-down = bspwm-desknext
+scroll-up = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/right]
+
+;monitor = ${env:MONITOR:HDMI-1}
+width = 20%
+height = 40
+offset-x = 80%
+radius = 20
+fixed-center = true
+border-size = 8
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+padding-left = 3
+padding-right = 3
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = IosevkaTermMedium:size=10
+font-1 = siji:pixelsize=14;1
+font-2 = FontAwesome:style=Bold:size=10
+
+modules-right = pulseaudio  date powermenu
+
+tray-position = right
+tray-padding = 5
+tray-background = ${colors.backgroundt}
+
+
+[bar/background]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 40
+;offset-y = 0
+radius = 20
+fixed-center = true
+border-size = 8
+background = ${colors.backgroundt}
+
+padding-left = 195
+padding-right = 100
+
+module-margin-left = 60
+module-margin-right = 1
+
+font-0 = IosevkaTermMedium:size=11
+
+modules-left = xwindow
+
