@@ -17,4 +17,4 @@ polybar right &
 
 
 #start applications
-/home/wolfgang/startupscripts/./terminalstart.sh
+~/startupscripts/./terminalstart.sh
