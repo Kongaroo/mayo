@@ -9,12 +9,10 @@ picom -b
 #start polybar
 source ~/.bashrc
 
-polybar background &
-sleep .2
 polybar center &
 polybar main &
 polybar right &
 
 
 #start applications
-~/startupscripts/./terminalstart.sh
+/home/wolfgang/startupscripts/./terminalstart.sh
