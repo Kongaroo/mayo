@@ -26,6 +26,7 @@ offset-x = 0%
 radius = 20
 fixed-center = true
 border-size = 8
+wm-restack = bspwm
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -54,7 +55,7 @@ offset-x = 40%
 offset-y =
 fixed-center = true
 border-size=8
-
+wm-restack = bspwm
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -73,9 +74,6 @@ modules-center = bspwm
 scroll-down = bspwm-desknext
 scroll-up = bspwm-deskprev
 
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
 cursor-click = pointer
 cursor-scroll = ns-resize
 
@@ -88,6 +86,7 @@ offset-x = 80%
 radius = 20
 fixed-center = true
 border-size = 8
+wm-restack = bspwm
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -105,30 +104,9 @@ font-0 = IosevkaTermMedium:size=10
 font-1 = siji:pixelsize=14;1
 font-2 = FontAwesome:style=Bold:size=10
 
-modules-right = pulseaudio  date powermenu
+modules-left = xwindow
+modules-right = pulseaudio  date
 
 tray-position = right
 tray-padding = 5
 tray-background = ${colors.backgroundt}
-
-
-[bar/background]
-;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
-height = 40
-;offset-y = 0
-radius = 20
-fixed-center = true
-border-size = 8
-background = ${colors.backgroundt}
-
-padding-left = 195
-padding-right = 100
-
-module-margin-left = 60
-module-margin-right = 1
-
-font-0 = IosevkaTermMedium:size=11
-
-modules-left = xwindow
-
