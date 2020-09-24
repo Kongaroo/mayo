@@ -114,7 +114,7 @@ line-size = 3
 line-color = #f00
 
 padding-left = 3
-padding-right = 40
+padding-right = 13
 
 module-margin-left = 1
 module-margin-right = 2
@@ -128,14 +128,14 @@ modules-right = pulseaudio  date
 
 tray-position = center
 tray-detached = true
-tray-offset-x = 250
+tray-offset-x = 255
 tray-background = ${colors.background}
 
 
 [module/xwindow]
 type = internal/xwindow
 format = <label>
-label-maxlen = 27
+label-maxlen = 25
 
 [module/xkeyboard]
 type = internal/xkeyboard

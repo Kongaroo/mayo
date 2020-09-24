@@ -8,7 +8,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
 Plug 'yggdroot/indentline'
-Plug 'tmhedberg/SimpylFold'
+" Plug 'tmhedberg/SimpylFold'
 Plug 'machakann/vim-highlightedyank'
 
 " File Finder
@@ -22,6 +22,9 @@ Plug 'davidhalter/jedi-vim'
 
 " Syntax
 Plug 'dense-analysis/ale'
+
+" Oher
+Plug 'vimwiki/vimwiki'
 
 " End plug
 call plug#end()
@@ -56,7 +59,7 @@ let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
+let g:airline_symbols.branch = '' 
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
@@ -76,8 +79,15 @@ let g:ale_linters = {'python': ['pylint']}
 let g:jedi#documentation_command = "K"
 autocmd FileType python setlocal completeopt-=preview
 
+" ycm
+
+let g:ycm_global_ycm_extra_conf = "~/.config/nvim/plugged/youcompleteme/third_party/ycmd/.ycm_extra_conf.py" 
+
 " other settings
 set mouse=a
+filetype plugin on
+set nocompatible
+
 " line number
 set number relativenumber
 
@@ -90,9 +100,22 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+" Folding
+" set foldmethod=indent
 
 " Keybindings
 :let mapleader = ","
 nnoremap <leader>f :Files<CR>
+autocmd FileType python nnoremap <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
 
+" Vim wiki
+let g:vimwiki_list = [{
+	\ 'path': '~/vimwiki',
+	\ 'template_path': '~/vimwiki/templates/',
+	\ 'template_default': 'default',
+	\ 'syntax': 'markdown',
+	\ 'ext': '.md',
+	\ 'path_html': '~/vimwiki/site_html/',
+	\ 'custom_wiki2html': 'vimwiki_markdown',
+	\ 'template_ext': '.tpl'}]

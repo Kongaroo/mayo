@@ -1,3 +1,3 @@
 #!/bin/bash
 
-urxvt -e bash --rcfile <(echo '. ~/.bashrc; neofetch') &
+urxvt -e zsh -ic '. ~/.zshrc; neofetch && zsh'
