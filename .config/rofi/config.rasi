@@ -1,6 +1,6 @@
 configuration {
 	modi: "drun,window,ssh,combi";
-	theme: "/home/wolfgang/.cache/wal/colors-rofi-dark.rasi";
+	theme: "~/.cache/wal/colors-rofi-dark.rasi";
 	font: "IosevkaNerdFont 20";
 	combi-modi: "window,drun,ssh";
 	width: 20;
