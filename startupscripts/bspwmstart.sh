@@ -10,9 +10,5 @@ picom -b
 ~/startupscripts/./startpolybar.sh
 
 #start applications
-discord &
-firefox &
-chromium &
-thunderbird &
-spotify	& sleep .1 && wmctrl -r "Spotify" -t 4
 /home/wolfgang/startupscripts/./terminalstart.sh
+
