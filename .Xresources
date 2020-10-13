@@ -1,0 +1,19 @@
+URxvt.font: xft:Iosevka Term Medium Extended:style=Regular:size=11
+URxvt.boldFont: xft:Iosevka:style=Bold:size=11
+URxvt.italicFont: xft:Iosevka Term Extended:style=Italic:size=11
+URxvt.boldItalicFont: xft:Iosevka Term Extended:style=Bold Extended Italic,size=11
+
+
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 24
+URxvt.cursorBlink: 1
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 32
+URxvt.iso14755: false
+
