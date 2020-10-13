@@ -23,7 +23,7 @@ Plug 'davidhalter/jedi-vim'
 " Syntax
 Plug 'dense-analysis/ale'
 
-" Oher
+" Other
 Plug 'vimwiki/vimwiki'
 
 " End plug
@@ -87,6 +87,8 @@ let g:ycm_global_ycm_extra_conf = "~/.config/nvim/plugged/youcompleteme/third_pa
 set mouse=a
 filetype plugin on
 set nocompatible
+set clipboard+=unnamedplus
+set guicursor+=a:blinkon100
 
 " line number
 set number relativenumber
@@ -95,7 +97,7 @@ set number relativenumber
 syntax on
 syntax enable
 
-" Tab config
+" Tab confiag
 set expandtab
 set tabstop=4
 set shiftwidth=4
